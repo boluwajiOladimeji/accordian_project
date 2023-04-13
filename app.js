@@ -9,6 +9,7 @@ questions.forEach((question) => {
     // console.log(e.currentTarget);
     if (e.currentTarget.classList.contains('show')) {
       e.currentTarget.classList.remove('show');
+      return;
     }
     for (let question of questions) {
       question.classList.remove('show');
