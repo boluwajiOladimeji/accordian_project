@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: hsl(240, 6%, 50%);
   font-family: 'Kumbh Sans', sans-serif;
 }
@@ -29,7 +29,7 @@ section {
   max-width: 1100px;
   margin: 0 auto 2rem;
   position: relative;
-  padding: 10rem 1.5rem 5rem;
+  padding: 8rem 1.5rem 3rem;
   border-radius: 1rem;
 }
 
@@ -41,28 +41,35 @@ section {
   transform: translate(-50%, -60%);
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 820px) {
+  main {
+    display: grid;
+    place-items: center;
+  }
+
   section {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
-    padding: 3rem;
+    /* justify-content: space-between; */
+    padding: 2rem;
     padding-left: 0;
+  }
+
+  figure {
+    flex-grow: 1;
   }
 
   .main-img {
     position: static;
     width: 400px;
-    /* background: blue; */
     transform: scaleX(1.2);
     transform: translateX(-5rem);
   }
 }
 
 article {
-  /* background: blue; */
-  padding: 1rem 0;
-  font-size: 1.1rem;
+  padding: 0.8rem 0;
   border-bottom: 1px solid hsl(240, 5%, 91%);
   cursor: pointer;
   transition: all linear 3000s;
@@ -73,12 +80,13 @@ h1 {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .question-container {
   display: flex;
   justify-content: space-between;
-  padding: 0.6rem 0;
+  padding: 0.4rem 0;
 }
 
 button {
